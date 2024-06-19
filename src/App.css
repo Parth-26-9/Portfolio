@@ -1,0 +1,46 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 62.5%;
+
+}
+
+.cont{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.mybtn{
+    width: 30rem;
+    font-size: 4rem;
+}
+@media (max-width:900px)
+{
+    .mybtn{
+        width: 30rem;
+        font-size: 3rem;
+        padding: 3rem;
+    }
+}
+@media (max-width:400px)
+{
+    .mybtn
+    {
+        margin-left: 8rem;
+    }
+}
+@media (max-width:320px)
+{
+    .mybtn{
+        margin-left: 5rem;
+    }
+}

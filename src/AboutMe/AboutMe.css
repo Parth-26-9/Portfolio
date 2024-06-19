@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.co{
+    width: 100vw;
+    /* height: 100vh; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#aa076b,#61045f);
+}
+
+.aboutMeCard {
+    padding: 15px;
+    width: 350px;
+    background: #222;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+    user-select: none;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+.profile-name{
+    font-size: 3rem;
+    background: -webkit-linear-gradient(#2193b0 , #6dd5ed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline rgb(215, 210, 210);
+}
+.about{
+    font-size: 3rem;
+    background: -webkit-linear-gradient(#42275a,#734b6d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-me{
+    font-size: 3rem;
+    cursor: pointer;
+    background: -webkit-linear-gradient(#cc2b5e,#753a88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline dashed darkred;
+    text-decoration-thickness: 1rem;
+}
+.about-me-text{
+    font-size: 2rem;
+    background: -webkit-linear-gradient(#eecda3,#ef629f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#link{
+    color: blue;
+    font-size: 5rem;
+    cursor: pointer;
+}
+.icons{
+    width: 100%;
+    height: 5rem;
+}

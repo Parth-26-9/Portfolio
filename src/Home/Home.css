@@ -1,0 +1,1645 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+
+  font-size: 62.5%;
+}
+
+.MyContainer {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  background-color: #020202;
+}
+.left-part {
+  position: fixed;
+  width: 12vw;
+  min-height: 100vh;
+  border: 0.1rem solid #181818;
+  visibility: visible;
+}
+.logout-button{
+  padding: 2rem;
+  font-size: 3rem;
+}
+.left-part-upper {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  align-items: center;
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+}
+.left-part-upper img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.blank-section {
+  width: 100%;
+  height: 8rem;
+  border-top: 0.1rem solid rgb(176, 172, 172);
+  border-bottom: 0.1rem solid rgb(131, 126, 126);
+}
+.blank-section-home {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8rem;
+  color: rgb(130, 125, 125);
+  border-top: 0.1rem solid rgb(176, 172, 172);
+  border-bottom: 0.1rem solid rgb(131, 126, 126);
+}
+.blank-section-home h3 {
+  font-size: 2.5rem;
+}
+.blank-section-aboutme h3 {
+  font-size: 2.5rem;
+}
+.blank-section-contact h3 {
+  font-size: 2.5rem;
+}
+.blank-section-project h3 {
+  font-size: 2.5rem;
+}
+.blank-section-skills h3 {
+  font-size: 2.5rem;
+}
+
+.blank-section-skills {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8rem;
+  color: rgb(130, 125, 125);
+  border-top: 0.1rem solid rgb(176, 172, 172);
+  border-bottom: 0.1rem solid rgb(131, 126, 126);
+}
+
+.blank-section-project {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8rem;
+  color: rgb(130, 125, 125);
+  border-top: 0.1rem solid rgb(176, 172, 172);
+  border-bottom: 0.1rem solid rgb(131, 126, 126);
+}
+.blank-section-aboutme {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8rem;
+  color: rgb(130, 125, 125);
+  border-top: 0.1rem solid rgb(176, 172, 172);
+  border-bottom: 0.1rem solid rgb(131, 126, 126);
+}
+.blank-section-contact {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8rem;
+  color: rgb(130, 125, 125);
+  border-top: 0.1rem solid rgb(176, 172, 172);
+  border-bottom: 0.1rem solid rgb(131, 126, 126);
+}
+.exitButton{
+  cursor: pointer;
+  color: white;
+  height: 10rem;
+  width: 5rem;
+}
+
+
+.parth {
+  color: #ff00ff;
+}
+.web {
+  color: #fff724;
+}
+.right-part {
+  width: 61.5vw;
+  margin-left: 20rem;
+}
+.web {
+  position: relative;
+  right: 1rem;
+}
+.heading-part {
+  width: 50rem;
+  color: white;
+  position: relative;
+  top: 17rem;
+  left: 5rem;
+}
+hi{
+  text-align: start;
+}
+.heading-part h1 {
+  font-size: 10rem;
+  font-weight: bolder;
+}
+.middle-text {
+  width: 70rem;
+  color: white;
+  position: relative;
+  top: 17rem;
+  left: 5rem;
+  font-size: 7rem;
+}
+.web {
+  font-size: 4rem;
+}
+/* Css Button */
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900");
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, 0.4);
+  --btn-color: hsl(210, 80%, 42%);
+  --bg-color: #141218;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #020202;
+}
+
+.end-button-section {
+  width: 20rem;
+  position: relative;
+  top: 18rem;
+  left: 5rem;
+}
+button {
+  position: relative;
+  padding: 30px 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: "Source Code Pro";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--text-color);
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 4px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+button:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after,
+button::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events: none;
+}
+
+button::after {
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+}
+
+.right,
+.left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.right {
+  left: 66%;
+}
+
+.left {
+  right: 66%;
+}
+
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+  background-color: var(--bg-color);
+  color: transparent;
+  transition: transform 0.4s ease-out;
+  transform: translate(0, -90%) rotate(0deg);
+}
+
+button:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg);
+}
+
+button .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg);
+}
+
+button .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg);
+}
+
+/* bubbles */
+
+button::before {
+  content: "";
+  pointer-events: none;
+  opacity: 0.6;
+  background: radial-gradient(
+      circle at 20% 35%,
+      transparent 0,
+      transparent 2px,
+      var(--text-color) 3px,
+      var(--text-color) 4px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 75% 44%,
+      transparent 0,
+      transparent 2px,
+      var(--text-color) 3px,
+      var(--text-color) 4px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 46% 52%,
+      transparent 0,
+      transparent 4px,
+      var(--text-color) 5px,
+      var(--text-color) 6px,
+      transparent 6px
+    );
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+}
+
+#hamburger-menu {
+
+  width: 5%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+@media (max-width: 1215px) {
+  .blank-section-aboutme h3 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 1160px) {
+  .logo-text2 {
+    font-size: 1.5rem;
+  }
+  .blank-section-aboutme h3 {
+    font-size: 2.3rem;
+  }
+  .left-part {
+    position: fixed;
+    width: 12vw;
+    /* height: 100vh; */
+    min-height: 100vh;
+    border: 0.1rem solid black;
+    visibility: visible;
+  }
+}
+@media (max-width: 1157px) {
+  .logo-text2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 1120px) {
+  .blank-section-aboutme h3 {
+    font-size: 2.2rem;
+  }
+  .left-part {
+    width: 12vw;
+  }
+}
+@media (max-width: 1150px) {
+  .left-part {
+    width: 15vw;
+  }
+}
+@media (max-width: 950px) {
+  .middle-text{
+    width: 60rem;
+    font-size: 6rem;
+  }
+  .left-part {
+    width: 17vw;
+  }
+}
+@media (max-width: 900px) {
+  .responsive-part {
+    width: 100%;
+    height: 100%;
+  }
+  .left-part {
+    display: none;
+  }
+  .right-part {
+    width: 100vw;
+    /* border: .5rem solid yellow; */
+    position: relative;
+    right: 12rem;
+  }
+
+  #hamburger-menu {
+    width: 5%;
+    height: 7%;
+    display: flex;
+    position: relative;
+    right: 3rem;
+    top: 4rem;
+    z-index: 150;
+     /* border: 1rem solid blue; */
+  }
+  .responsive-part {
+    width: 100%;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    z-index: 100;
+  }
+
+  .responsive-part .responsive-part-upper {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+  }
+  .responsive-part .responsive-part-upper img {
+    width: 25%;
+    height: 60%;
+    cursor: pointer;
+    margin-top: 1rem;
+    /* border: 1rem solid blue; */
+  }
+  .responsive-part-middle-section {
+    width: 100%;
+    /* background-color: blue; */
+  }
+  .responsive-part .blank-section {
+    border-top: 0.1rem solid rgb(176, 172, 172);
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.5rem;
+    color: rgb(130, 125, 125);
+    border-top: 0.1rem solid rgb(176, 172, 172);
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-skills {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.5rem;
+    color: rgb(130, 125, 125);
+    border-top: 0.1rem solid rgb(176, 172, 172);
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-project {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.5rem;
+    color: rgb(130, 125, 125);
+    border-top: 0.1rem solid rgb(176, 172, 172);
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.5rem;
+    color: rgb(130, 125, 125);
+    border-top: 0.1rem solid rgb(176, 172, 172);
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-contact {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.5rem;
+    color: rgb(130, 125, 125);
+    border-top: 0.1rem solid rgb(176, 172, 172);
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .linkdin,
+  .github {
+    cursor: pointer;
+    color: white;
+    font-size: 5rem;
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+  }
+  .heading-part {
+    width: 45rem;
+    color: white;
+    position: relative;
+    z-index: 0;
+    /* border: 1rem solid blue; */
+  }
+  .heading-part h1 {
+    font-size: 9rem;
+    font-weight: bolder;
+    /* border: .5rem solid blue; */
+    position: relative;
+    bottom: 8rem;
+    /* border: 1rem solid blue; */
+  }
+  .middle-text {
+    width: 30rem;
+    color: white;
+    position: relative;
+    font-size: 2.5rem;
+    /* border: .5rem solid blue; */
+    position: relative;
+    top: 11.5rem;
+  }
+  .web {
+    font-size: 3.5rem;
+    position: relative;
+    bottom: 7rem;
+    right: 5rem;
+  }
+
+  button {
+    width: 30rem;
+    font-size: 4rem;
+    position: relative;
+    bottom: 5.5rem;
+    padding: 1rem;
+  }
+  .middle-text {
+    width: 50rem;
+    font-size: 5rem;
+  }
+  .logo-text {
+    font-size: 2rem;
+  }
+  .logo-text2 {
+    height: 4rem;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 873px) {
+  .logo-text2 {
+    height: 3rem;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .responsive-part .responsive-part-upper img {
+    width: 25%;
+    height: 55%;
+  }
+
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 6.7rem;
+    color: rgb(130, 125, 125);
+    border-top: 0.1rem solid rgb(176, 172, 172);
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 6.7rem;
+    color: rgb(130, 125, 125);
+    border-top: 0.1rem solid rgb(176, 172, 172);
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 6.7rem;
+    color: rgb(130, 125, 125);
+    /* border-top: 0.1rem solid rgb(176, 172, 172); */
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 6.7rem;
+    color: rgb(130, 125, 125);
+    /* border-top: 0.1rem solid rgb(176, 172, 172); */
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 6.7rem;
+    color: rgb(130, 125, 125);
+    /* border-top: 0.1rem solid rgb(176, 172, 172); */
+    /* border-bottom: 0.1rem solid rgb(131, 126, 126); */
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 680px) {
+  .responsive-part .blank-section-home {
+    height: 7.5rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 7.5rem;
+  }
+  .responsive-part .blank-section-contact {
+    height: 7.5rem;
+  }
+  .responsive-part .blank-section-project {
+    height: 7.5rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 7.5rem;
+  }
+}
+@media (max-width: 650px) {
+  #hamburger-menu{
+    position: relative;
+    left: 5rem;
+  }
+  .right-part{
+    right: 17rem;
+  }
+  .logo-text2 {
+    height: 1rem;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 640px) {
+  .responsive-part .responsive-part-upper img {
+    width: 25%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 570px) {
+  .responsive-part .responsive-part-upper img {
+    width: 35%;
+    height: 57%;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 7.5rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 7.5rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 7.5rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 7.5rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 7.5rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 3rem;
+  }
+ 
+}
+@media (max-width: 540px) {
+  .responsive-part .blank-section-aboutme {
+    height: 8.5rem;
+  }
+  .responsive-part .blank-section-contact {
+    height: 8.5rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 8.5rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 8.5rem;
+  }
+  .responsive-part .blank-section-project {
+    height: 8.5rem;
+  }
+}
+@media (max-width: 520px) {
+  .responsive-part .responsive-part-upper img {
+    width: 35%;
+    height: 57%;
+  }
+}
+@media (max-width: 500px) {
+  .responsive-part .responsive-part-upper img {
+    width: 35%;
+    height: 57%;
+  }
+  #hamburger-menu {
+    margin: 3rem;
+  }
+  .responsive-part {
+    width: 100%;
+    height: 100%;
+  }
+
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 10rem;
+    color: rgb(130, 125, 125);
+    border-top: 0.1rem solid rgb(176, 172, 172);
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 4rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 10rem;
+    color: rgb(130, 125, 125);
+    border-top: 0.1rem solid rgb(176, 172, 172);
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 4rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 10rem;
+    color: rgb(130, 125, 125);
+    /* border-top: 0.1rem solid rgb(176, 172, 172); */
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 4rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 10rem;
+    color: rgb(130, 125, 125);
+    /* border-top: 0.1rem solid rgb(176, 172, 172); */
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 4rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 10rem;
+    color: rgb(130, 125, 125);
+    /* border-top: 0.1rem solid rgb(176, 172, 172); */
+    /* border-bottom: 0.1rem solid rgb(131, 126, 126); */
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 4rem;
+  }
+
+  /*    
+   .social-media {
+    width: 100%;
+  }
+  .linkdin
+  {
+    font-size: 4rem;
+  }
+  .github
+  {
+    font-size: 4rem;
+  } */
+}
+
+@media (max-width: 470px) {
+  .responsive-part .responsive-part-upper img {
+    width: 35%;
+    height: 57%;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 10.5rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 4rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 10.5rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 4rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 10.5rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 4rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 10.5rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 4rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 10.5rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 450px) {
+  .responsive-part .linkdin,
+  .github {
+    cursor: pointer;
+    color: white;
+    font-size: 6rem;
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+    margin-top: 3rem;
+  }
+  .responsive-part .responsive-part-upper img {
+    width: 40%;
+    height: 60%;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 11rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 4.5rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 11rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 4.5rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 11rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 4.5rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 11rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 4.5rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 11rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 430px) {
+  #hamburger-menu {
+    width: 5%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* left: 50rem; */
+    z-index: 150;
+    margin: 1rem;
+    /* border: 1rem solid blue; */
+  }
+  .heading-part {
+    width: 30rem;
+  }
+  .heading-part h1 {
+    font-size: 7rem;
+  }
+  .middle-text {
+    width: 30rem;
+  }
+  .middle-text p {
+    font-size: 3rem;
+  }
+  .web {
+    width: 10rem;
+    font-size: 3rem;
+  }
+  .responsive-part .responsive-part-upper img {
+    width: 35%;
+    height: 57%;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 12rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 4.5rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 12rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 4.5rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 12rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 4.5rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 12rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 4.5rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 12rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 410px) {
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 13rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 4.5rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 13rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 4.5rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 13rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 4.5rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 13rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 4.5rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 13rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo-text {
+    font-size: 3rem;
+  }
+  .logo-text2 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .responsive-part-upper img {
+    width: 45%;
+    height: 55%;
+  }
+  .heading-part {
+    width: 45rem;
+    color: white;
+    position: relative;
+    z-index: 0;
+  }
+  .heading-part h1 {
+    font-size: 9rem;
+    font-weight: bolder;
+    /* border: .5rem solid blue; */
+    position: relative;
+    bottom: 0rem;
+    right: 4rem;
+  }
+  .middle-text {
+    width: 30rem;
+    color: white;
+    font-size: 2.5rem;
+    /* border: .5rem solid blue; */
+    position: relative;
+    top: 17.5rem;
+    left: 2rem;
+  }
+  .web {
+    font-size: 4rem;
+    position: relative;
+    bottom: 0rem;
+    /* border: .5rem solid blue; */
+    right: 3.5rem;
+  }
+  button {
+    width: 30rem;
+    font-size: 4rem;
+    position: relative;
+    bottom: 0rem;
+    right: 4rem;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 11rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 4.5rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 11rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 4.5rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 11rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 4.5rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 11rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 4.5rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 11rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 395px) {
+  #hamburger-menu {
+    left: 0.1rem;
+  }
+  .heading-part {
+    width: 10rem;
+    color: white;
+    position: relative;
+    z-index: 0;
+  }
+  .heading-part h1 {
+    font-size: 9.5rem;
+    font-weight: bolder;
+    position: relative;
+    bottom: 0rem;
+    right: 4rem;
+  }
+  .right-part {
+    right: 17rem;
+  }
+  .responsive-part .responsive-part-upper img {
+    width: 45%;
+    height: 53%;
+  }
+  .logo-text {
+    font-size: 3rem;
+  }
+  .logo-text2 {
+    font-size: 2rem;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .logo-text {
+    font-size: 3rem;
+  }
+  .logo-text2 {
+    font-size: 2rem;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 8rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 350px) {
+  .responsive-part .linkdin,
+  .github {
+    cursor: pointer;
+    color: white;
+    font-size: 7rem;
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+    margin-top: 3rem;
+  }
+  .logo-text {
+    font-size: 3rem;
+  }
+  .logo-text2 {
+    font-size: 2.2rem;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 8.5rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 8.5rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 8.5rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 8.5rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 8.5rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 325px) {
+  .logo-text {
+    font-size: 3rem;
+  }
+  .logo-text2 {
+    font-size: 2.2rem;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 9.5rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 9.5rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 9.5rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 9.5rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 3rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 9.5rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 320px) {
+  .heading-part {
+    width: 46rem;
+    color: white;
+    position: relative;
+    z-index: 0;
+  }
+  .heading-part h1 {
+    font-size: 9.5rem;
+    font-weight: bolder;
+    /* border: .5rem solid blue; */
+    position: relative;
+    bottom: 0rem;
+    right: 4rem;
+  }
+  .middle-text {
+    width: 30rem;
+    color: white;
+    font-size: 2.5rem;
+    /* border: .5rem solid blue; */
+    position: relative;
+    top: 20rem;
+    left: 2rem;
+  }
+  .web {
+    font-size: 4.5rem;
+    position: relative;
+    bottom: 0rem;
+    top: 2rem;
+    /* border: .5rem solid blue; */
+    right: 3.5rem;
+  }
+  button {
+    width: 30rem;
+    font-size: 4rem;
+    position: relative;
+    bottom: 0rem;
+    top: 3rem;
+    right: 4rem;
+  }
+  .logo-text {
+    font-size: 3rem;
+  }
+  .logo-text2 {
+    font-size: 2.2rem;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 14rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 6rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 14rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 6rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 14rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 6rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 14rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 6rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 14rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 6rem;
+  }
+ 
+}
+@media (max-width: 300px) {
+  .responsive-part .responsive-part-upper img {
+    width: 70%;
+    height: 63%;
+  }
+  .logo-text {
+    font-size: 4rem;
+  }
+  .logo-text2 {
+    font-size: 3rem;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 13.5rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 5rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 13.5rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 5rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 13.5rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 5rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 13.5rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 5rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 13.5rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 270px) {
+  .logo-text {
+    font-size: 4rem;
+  }
+  .logo-text2 {
+    font-size: 4rem;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 16.5rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 7rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 16.5rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 7rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 16.5rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 7rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 16.5rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 7rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 16.5rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .responsive-part .linkdin,
+  .github {
+    cursor: pointer;
+    color: white;
+    font-size: 10rem;
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+    margin-top: 10rem;
+  }
+
+  .heading-part {
+    width: 45rem;
+    color: white;
+    position: relative;
+    z-index: 0;
+  }
+  .heading-part h1 {
+    font-size: 9rem;
+    font-weight: bolder;
+    /* border: .5rem solid blue; */
+    position: relative;
+    bottom: 0rem;
+    right: 4rem;
+  }
+  .middle-text {
+    width: 30rem;
+    color: white;
+    font-size: 2.5rem;
+    /* border: .5rem solid blue; */
+    position: relative;
+    top: 22rem;
+    left: 2rem;
+  }
+  .web {
+    font-size: 4.5rem;
+    position: relative;
+    bottom: 0rem;
+    /* border: .5rem solid blue; */
+    right: 3.5rem;
+  }
+  button {
+    width: 40rem;
+    border: 0.5rem solid blue;
+    font-size: 5.5rem;
+    position: relative;
+    bottom: 0rem;
+    top: 5rem;
+    right: 4rem;
+  }
+}
+
+@media (max-width: 230px) {
+  .logo-text {
+    font-size: 4rem;
+  }
+  .logo-text2 {
+    font-size: 4rem;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 19.5rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 6rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 19.5rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 6rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 19.5rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 6rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 19.5rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 6rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 19.5rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 200px) {
+  .responsive-part .linkdin,
+  .github {
+    cursor: pointer;
+    color: white;
+    font-size: 14rem;
+    border-bottom: 0.1rem solid rgb(131, 126, 126);
+    margin-top: 15rem;
+  }
+  .responsive-part .responsive-part-upper img {
+    width: 70%;
+    height: 63%;
+  }
+  .logo-text {
+    font-size: 4rem;
+  }
+  .logo-text2 {
+    font-size: 4rem;
+  }
+  .responsive-part .blank-section {
+    height: 0rem;
+  }
+  .responsive-part .blank-section-home {
+    height: 22.5rem;
+  }
+  .responsive-part .blank-section-home h3 {
+    font-size: 6rem;
+  }
+  .responsive-part .blank-section-skills {
+    height: 22.5rem;
+  }
+  .responsive-part .blank-section-skills h3 {
+    font-size: 6rem;
+  }
+
+  .responsive-part .blank-section-project {
+    height: 22.5rem;
+  }
+  .responsive-part .blank-section-project h3 {
+    font-size: 6rem;
+  }
+  .responsive-part .blank-section-aboutme {
+    height: 22.5rem;
+  }
+  .responsive-part .blank-section-aboutme h3 {
+    font-size: 6rem;
+  }
+
+  .responsive-part .blank-section-contact {
+    height: 22.5rem;
+  }
+  .responsive-part .blank-section-contact h3 {
+    font-size: 6rem;
+  }
+}
